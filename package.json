@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev | grep -o 'http://localhost:[0-9]*' | head -n 1 | xargs open",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
